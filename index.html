@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ["sans-serif"],
+          },
+        },
+      };
+    </script>
+    <title>Order Summary</title>
+  </head>
+  <body>
+    <!-- Background  -->
+    <div
+      class="flex items-center justify-center h-screen bg-[url('images/pattern-background-desktop.svg')] bg-cover bg-center"
+    >
+      <!-- Container -->
+      <div class="p-3 m-2 rounded-xl max-w-96">
+        <div class="flex rounded-xl flex-col shadow-lg">
+          <img
+            src="images/illustration-hero.svg"
+            alt=""
+            class="w-96 rounded-t-xl"
+          />
+          <div class="flex bg-white flex-col p-8 rounded-b-xl">
+            <h1 class="text-xl text-center m-2 font-bold">Order Summary</h1>
+            <p class="text-slate-500 text-center   p-2  text-sm">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+            <div class="flex flex-row justify-between items-center bg-blue-50 rounded-xl p-4 my-2 ">
+              <div class="flex flex-row items-center justify-between wrap">
+                  <img src="images/icon-music.svg" alt="" >
+                  <div class="text-xs">
+                    <h3 class="mx-3 my-1 font-bold base">Annual Plan</h3>
+                    <p class="text-[#7280a7] mx-3  my-1 font-bold">$59.99/year</p>
+                  </div>
+              </div>
+              <div>
+                <a href="" class="text-[#3829e0] text-xs font-bold underline underline-[#3829e0]">Change</a>
+              </div>
+            </div>
+            <button class="bg-[#3829e0] p-2 rounded-lg my-2 text-xs text-[#f5f7ff] shadow-lg shadow-blue-100 font-bold">Proceed to Payment</button>
+            <p class="text-center text-slate-600 text-xs m-2 p-2 font-bold"> Cancel Order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
